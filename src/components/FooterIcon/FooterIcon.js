@@ -3,7 +3,7 @@ import { Text, Image, StyleSheet, TouchableOpacity } from "react-native";
 
 const FooterIcon = (props) => (
   <TouchableOpacity style={styles.container}>
-    <Image style={{height:20, width:20}} source={require('../../assets/message.svg')} />
+    <Image style={{height:20, width:20}} source={require('../../../assets/message.svg')} />
     <Text style={{color: 'white'}}>{props.section}</Text>
   </TouchableOpacity>
 );

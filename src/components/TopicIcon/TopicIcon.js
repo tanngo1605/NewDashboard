@@ -3,7 +3,7 @@ import { View, TouchableOpacity, Image, StyleSheet, Text } from "react-native";
 
 const TopicIcon = (props) => (
   <TouchableOpacity style={styles.container}>
-    <Image style={styles.img} source={require("../../assets/results.svg")} />
+    <Image style={styles.img} source={require("../../../assets/results.svg")} />
     <Text style={{fontWeight:'bold', fontFamily:'sans-serif'}}>{props.section}</Text>
   </TouchableOpacity>
 );
