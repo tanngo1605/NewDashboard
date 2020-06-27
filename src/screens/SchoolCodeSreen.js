@@ -13,15 +13,18 @@ const SchoolCodeScreen = (props) => {
   const [selectedValue, setSelectedValue] = useState("admin");
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 50, color: "#00044b", margin:120 }}>EDUFLOW</Text>
+      <Text style={{ fontSize: 50, color: "#00044b", margin: 120 }}>
+        EDUFLOW
+      </Text>
 
       <View style={styles.inputForm}>
-        <Text style={{fontFamily:'sans-serif', fontWeight:'bold'}}>SCHOOL CODE</Text>
+        <Text style={{ fontFamily: "sans-serif", fontWeight: "bold" }}>
+          SCHOOL CODE
+        </Text>
         <TextInput style={styles.input} placeholder="Enter School code" />
         <Picker
           selectedValue={selectedValue}
           style={styles.input}
-          
           onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
         >
           <Picker.Item label="Admin" value="admin" />
@@ -29,11 +32,25 @@ const SchoolCodeScreen = (props) => {
           <Picker.Item label="Student" value="student" />
         </Picker>
       </View>
-      <TouchableOpacity style={styles.btn}>
-        <Text style={{color:'white'}}>SUBMIT</Text>
+      <TouchableOpacity
+        style={styles.btn}
+        onPress={() => {
+          props.navigation.navigate({ routeName: "Login" });
+        }}
+      >
+        <Text style={{ color: "white" }}>SUBMIT</Text>
       </TouchableOpacity>
     </View>
   );
+};
+
+SchoolCodeScreen.navigationOptions = {
+  headerTitle: "Input Code",
+
+  headerStyle: {
+    backgroundColor: "#00044b",
+  },
+  headerTintColor: 'white'
 };
 
 const styles = StyleSheet.create({
@@ -56,18 +73,17 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     borderRadius: 10,
     marginBottom: 30,
-    backgroundColor:'white'
+    backgroundColor: "white",
   },
-  btn:{
-      backgroundColor: '#00044b',
-      borderRadius: 10,
-      width: 150,
-      height:30,
-      justifyContent: 'center',
-      alignItems: 'center',
-      marginVertical: 35
-  }
+  btn: {
+    backgroundColor: "#00044b",
+    borderRadius: 10,
+    width: 150,
+    height: 30,
+    justifyContent: "center",
+    alignItems: "center",
+    marginVertical: 35,
+  },
 });
-
 
 export default SchoolCodeScreen;

@@ -26,8 +26,9 @@ const AttendanceList = (props) => (
 
 const styles = StyleSheet.create({
   container: {
-    width: "95vw",
-    marginTop: 20
+    width: "90vw",
+    marginTop: 20,
+    marginLeft: 18
   },
   header: {
     fontSize: 18,

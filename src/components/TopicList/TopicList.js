@@ -25,8 +25,9 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     flexWrap: "wrap",
-    width: "95vw",
+    width: "90vw",
     marginTop: 40,
+    marginLeft: 18
   },
 });
 

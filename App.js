@@ -1,25 +1,8 @@
 import React from "react";
-import {
-  StyleSheet,
-  Picker,
-  Text,
-  View,
-  ScrollView,
-  SafeAreaView,
-} from "react-native";
-import HomeSreen from "./src/screens/HomeScreen";
-import UtilScreen from "./src/screens/UtilScreen";
-import LoginScreen from "./src/screens/LoginSreen";
-import SchoolCodeSreen from './src/screens/SchoolCodeSreen';
+import { StyleSheet, View } from "react-native";
+import AppNavigation from "./src/navigation/AppNavigation";
 export default function App() {
-  return (
-    <View style={styles.container}>
-      {/*<HomeSreen />*/}
-      {/*<UtilScreen />*/}
-      {/* <LoginScreen />*/}
-      <SchoolCodeSreen />
-    </View>
-  );
+  return <AppNavigation />;
 }
 
 const styles = StyleSheet.create({
