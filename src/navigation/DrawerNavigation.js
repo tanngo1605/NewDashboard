@@ -5,15 +5,6 @@ import HomeScreen from '../screens/HomeScreen';
 import Utils from '../screens/UtilScreen';
 
 
-/*const DrawerNavigation = createDrawerNavigator({
- {Home: {
-     screen: HomeScreen
- }},
- {
-     contentComponent: Utils
- }
-
-})*/
 const DrawerNavigation = createDrawerNavigator({
     Home: {
       screen: HomeScreen,
