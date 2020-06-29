@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Image, Text, StyleSheet } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 const Header = (props) => (
   <View style={styles.container}>
     <View style={styles.title}>
-      <Image style={{height:25, width:25,  backgroundColor:'#00044b'}} source={require('../../../assets/menu.svg')}  />
+      <TouchableOpacity onPress={() =>props.navigation.toggleDrawer()}><Image style={{height:25, width:25,  backgroundColor:'#00044b'}} source={require('../../../assets/menu.svg')}  /></TouchableOpacity>
       <Text style={{color:'white', fontSize:20, marginLeft:5, fontFamily:'sans-serif'}}>Bal Bharati Public School</Text>
       <Image style={{height:25, width:25, marginLeft: 'auto'}} source={require('../../../assets/Bell.svg')} />
     </View>

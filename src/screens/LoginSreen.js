@@ -59,7 +59,7 @@ const LoginScreen = (props) => (
       </View>
     </View>
     <View style={{ width: "60vw", borderRadius: 50 }}>
-      <Button color="#00044b" title="LOGIN" /*onPress={() => props.navigation.navigate({routeName: 'Home'})}*/ onPress = {() => props.navigation.replace('Home')} />
+      <Button color="#00044b" title="LOGIN" /*onPress={() => props.navigation.navigate({routeName: 'Home'})}*/ onPress = {() => props.navigation.replace('DashBoard')} />
     </View>
   </View>
 );

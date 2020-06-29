@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#00044b',
         justifyContent: 'center',
         alignItems: 'center',
-        width: '60vw',
+        width: '100%',
         flex: 1
     },
     avatar:{
